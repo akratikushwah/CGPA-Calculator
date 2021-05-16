@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-image: url('calc.jpg');
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:170px ;
+}
+
+.cgpa_container{
+    background-color: #ffffff7e;
+    width:500px;
+    height:auto;
+    border-radius: 10px;
+    padding:15px;
+    position: center;
+
+}
+
+.cgpa_container > .cgpa_title{
+    width: 100%;
+    height: 50px;
+    background-color:rgba(95, 94, 94, 0.52);
+    text-align:center;
+    line-height:50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size:24px;
+    color:#000000;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.cgpa_container > input{
+    border:none;
+    background-color:#ffffff ;
+    outline:none;
+    width: 220px;
+    height: 25px;
+    border: 1px solid rgba(56, 55, 55, 0.746);
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    color: #242627;
+    margin: 6px;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color:#242627b7;
+    font-size: 15px;
+}
+
+.cgpa_container .cgpa_output{
+    width:100%;
+    margin-left: 19px;
+}
+
+.cgpa_container .cgpa_output h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    margin-top: 25px;
+    color: rgb(48, 40, 40);
+
+}
+
+.cgpa_container .cgpa_output #btn_re,
+.cgpa_container .cgpa_output #btn_sub {
+  border: none;
+  background-color: #1f1511b0;
+  outline: none;
+  font-size: 20px;
+  font-family: roboto slab;
+  cursor: pointer;
+  border-radius: 12px;
+  margin: 25px 0px 25px 0px;
+  color:#fff;
+  box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.03),
+  7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+   4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+padding: 5px 20px;
+}
+.cgpa_container .cgpa_output #btn_re{
+  margin-right: 15px;
+}
+/* cgpa_container cgpa_output > btn_re:active css part*/
+/* cgpa_container cgpa_output > btn_sub:active css part*/
+
+.cgpa_container .cgpa_output #btn_re:active,
+.cgpa_container .cgpa_output #btn_sub:active{
+  box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.03),
+  inset 7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+  inset 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
